@@ -108,6 +108,7 @@ def get_questions(start_date, end_date, db):
 			print 'Quota exhausted; stopping'
 			return -1
 		else:
+			time.sleep(0.5)
 			if 'backoff' in data:
 				print 'Backoff: ' + data['backoff'] + 's'
 				time.sleep(data['backoff'])
@@ -160,6 +161,7 @@ def get_answers(start_date, end_date, db):
 			print 'Quota exhausted; stopping'
 			return -1
 		else:
+			time.sleep(0.5)
 			if 'backoff' in data:
 				print 'Backoff: ' + data['backoff'] + 's'
 				time.sleep(data['backoff'])
@@ -199,6 +201,7 @@ def get_answers(start_date, end_date, db):
 			print 'Quota exhausted; stopping'
 			return -1
 		else:
+			time.sleep(0.5)
 			if 'backoff' in data:
 				print 'Backoff: ' + data['backoff'] + 's'
 				time.sleep(data['backoff'])
